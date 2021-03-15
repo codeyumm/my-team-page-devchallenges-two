@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&family=Poppins&display=swap');
+
+/* font-family: 'PT Serif', serif; */
+/* font-family: 'Poppins', sans-serif; */
+
+:root{
+    --bgColor: #FFFFFF;
+    --primaryFontColor: #000000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html { 
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--bgColor);
+}
+
+.main-container{
+    margin: 80px 120px;
+    /* background-color: beige; */
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 100px max-content 100px;
+}
+
+.top{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+.top > h1{
+    font-family: 'PT Serif', serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+
+    color: var(--primaryFontColor);
+}
+
+
+.team-info{
+    width: 300px;
+}
+.team-info > h5 {
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: var(--primaryFontColor);
+}
+
+.about-team{
+
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 27px;
+    color: var(--primaryFontColor);
+}
+
+.team{
+    margin-top: 80px;
+    /* background-color: aquamarine; */
+}
+
+.first-row{
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    justify-content: space-between;
+}
+
+.second-row{
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    justify-content: space-between;
+}
+
+.person-card{
+    display: grid;
+    grid-template-columns: 0.8fr 0.2fr;
+}
+
+.person-image{
+    width: 280px;
+    height: 400px;
+    
+}
+
+.below-image-text{
+    margin-top: 12px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--primaryFontColor);
+    font-family: 'Poppins', sans-serif; 
+}
+
+.side-image-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    font-family: 'PT Serif', serif;
+    writing-mode: vertical-rl;
+    margin-left: 10px;
+}
+
+.middle{
+    margin-top: 80px;
+}
+
+.footer{
+    margin-top: 80px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #A9A9A9;
+}
+
+/* @media all and (min-width: 768px) and (max-width: 1111px) { 
+    .main-container{
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+
+    .person-image{
+        width: 200px;
+        height: 300px;   
+    }
+} */
+
+/* for tablets */
+
+@media all and (min-width: 480px) and (max-width: 800px) {
+    .main-container{
+        grid-template-columns: 1fr;
+        margin: 10px;
+
+    }
+
+    .top{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .team-info{
+        margin-top: 32px;
+        text-align: center;
+    }
+
+    .team-info > h5 {
+
+        text-align: center;
+    }
+    .about-team{
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .first-row{
+        margin-top: 60px;
+        grid-template-columns: 0.5fr 0.5fr;
+        justify-items: center;
+    }
+
+    .second-row{
+        margin-top: 60px;
+        grid-template-columns: 0.5fr 0.5fr;
+        justify-content: start;
+    }
+
+    .person-card{
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .person-image{
+        width: 200px;
+        height: 300px;   
+    }
+
+    .side-image-text{
+        margin: 0;
+    }
+ }
+
+
+ /* for mobile */
+
+ @media all and (max-width: 480px) { 
+
+    .main-container{
+        grid-template-columns: 1fr;
+        margin: 10px;
+    }
+
+    .top{
+        grid-template-columns: 1fr;
+        margin-left: 12px;
+    }
+
+    .team-info{
+        margin-top: 32px;
+    }
+
+    .about-team{
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .first-row{
+        margin-top: 60px;
+        grid-template-columns: 0.5fr 0.5fr;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .person-image{
+        width: 138px;
+        height: 220px;   
+    }
+
+    .person-card{
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .side-image-text{
+        margin: 0;
+    }
+ }
